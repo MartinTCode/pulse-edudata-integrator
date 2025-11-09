@@ -77,3 +77,16 @@ Each dependency below supports a specific architectural layer or development act
 - **Maven Jar / Dependency Plugins** — package the project and copy required runtime JARs.  
 - **Flyway Maven Plugin** — applies SQL migrations through the `db` profile.
 
+### Why These Dependencies Are Used in Assignment 3
+
+Assignment 3 focuses on implementing a prototype of the *“Administration of Study Results”* process using REST-based web services that simulate LTU’s systems **Epok**, **StudentITS**, and **Ladok**.  
+These dependencies together provide all layers required for that architecture:
+
+- **Jersey + Jackson** enable building and exposing REST endpoints that exchange JSON between the simulated systems.  
+- **Hibernate + JPA + PostgreSQL + HikariCP** handle persistence for each system’s local database schema.  
+- **Validation (Jakarta / Hibernate Validator)** ensures data integrity before it reaches the database.  
+- **Flyway** keeps the three schemas synchronized and versioned for each subsystem.  
+- **JavaFX** provides a lightweight GUI for interacting with the backend prototype.  
+- **Logging and Testing (SLF4J, Logback, JUnit, Rest-Assured)** support debugging and verifying correct REST communication.
+
+In short, these dependencies implement a realistic **Service-Oriented Architecture (SOA)** stack that covers the complete flow described in the assignment—from GUI input to REST integration and database persistence.
