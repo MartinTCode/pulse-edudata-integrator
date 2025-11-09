@@ -1,10 +1,14 @@
-# pulse-RestWebServices
+# Pulse EduDataIntegrator
 
-Use postgresql for database
+A local JavaFX and REST-based prototype that demonstrates an integrated system for managing study results across multiple data sources using a Service-Oriented Architecture (SOA) approach.
 
-JavaFX for frontend (+css)
+---
 
-Junit5 for testing.
+## Overview
+
+- Uses **PostgreSQL** for databases (three schemas: Epok, StudentITS, Ladok)  
+- Uses **JavaFX** for the frontend (with optional CSS styling)  
+- Uses **JUnit 5** for testing 
 
 ## Branching strategy:
 
@@ -13,6 +17,8 @@ Junit5 for testing.
 - database integration.
 - testing for each branch.
 - JSON communication test (API)
+
+---
 
 ## Dependencies Explained
 
@@ -77,7 +83,9 @@ Each dependency below supports a specific architectural layer or development act
 - **Maven Jar / Dependency Plugins** — package the project and copy required runtime JARs.  
 - **Flyway Maven Plugin** — applies SQL migrations through the `db` profile.
 
-### Why These Dependencies Are Used in Assignment 3
+---
+
+## Why These Dependencies Are Used in Assignment 3
 
 Assignment 3 focuses on implementing a prototype of the *“Administration of Study Results”* process using REST-based web services that simulate LTU’s systems **Epok**, **StudentITS**, and **Ladok**.  
 These dependencies together provide all layers required for that architecture:
@@ -90,3 +98,44 @@ These dependencies together provide all layers required for that architecture:
 - **Logging and Testing (SLF4J, Logback, JUnit, Rest-Assured)** support debugging and verifying correct REST communication.
 
 In short, these dependencies implement a realistic **Service-Oriented Architecture (SOA)** stack that covers the complete flow described in the assignment—from GUI input to REST integration and database persistence.
+
+---
+
+## Technical Terms Explained
+
+This section clarifies the main technical keywords used in the project description and dependency overview.
+
+- **Enterprise Architecture (EA)**  
+  A structured way to describe how business processes, information, applications, and technology work together across an organization.
+
+- **Service-Oriented Architecture (SOA)**  
+  A design approach where functionality is divided into independent, reusable services that communicate through defined interfaces, such as REST APIs.
+
+- **REST (Representational State Transfer)**  
+  A standard architecture for web services using HTTP methods (GET, POST, PUT, DELETE) and JSON data for system-to-system communication.
+
+- **JPA (Jakarta Persistence API)**  
+  A specification that defines how Java objects are stored and retrieved from relational databases in an object-oriented way.
+
+- **ORM (Object-Relational Mapping)**  
+  A technique for mapping objects in code to database tables automatically, reducing the need for manual SQL.
+
+- **Schema**  
+  A logical section inside a database that groups related tables. This project uses three schemas—Epok, StudentITS, and Ladok—to simulate separate systems.
+
+- **Database Migrations**  
+  In practice, a *database migration* means applying controlled changes to the database automatically — such as creating tables, adding columns, or inserting initial data — through versioned SQL files.  
+  Each migration file has a name like `V1__create_tables.sql` or `V2__add_column.sql`, and Flyway runs them in order when the project starts or when you execute `mvn -Pdb flyway:migrate`.  
+  This makes sure all three schemas (Epok, StudentITS, Ladok) always use the same, up-to-date structure without having to run SQL manually.
+
+- **Validation**  
+  Automatic checking of incoming data (for example, ensuring a field is not empty) before it’s saved or processed.
+
+- **Dependency Injection (DI)**  
+  A design pattern where required components are provided automatically by the framework instead of being created manually, used here by Jersey.
+
+- **GUI (Graphical User Interface)**  
+  The visual interface built with JavaFX that allows users to interact with the prototype.
+
+These concepts form the technical foundation of the project’s architecture—connecting the GUI, REST services, and database through a clear, modular SOA structure.
+
