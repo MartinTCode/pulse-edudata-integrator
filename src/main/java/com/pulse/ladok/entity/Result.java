@@ -11,19 +11,19 @@ public class Result {
     @Column(name = "result_id", nullable = false)
     private int resultId;
 
-    @Column(name = "personal_no", nullable = false)
+    @Column(name = "personal_no", nullable = false, length = 20)
     private String personalNo;
 
-    @Column(name = "course_id", nullable = false)
+    @Column(name = "course_id", nullable = false, length = 50)
     private int courseId;
 
-    @Column(name = "module_code", nullable = false)
+    @Column(name = "module_code", nullable = false, length = 50)
     private String moduleCode;
 
     @Column(name = "exam_date", nullable = false)
     private LocalDate examDate;
 
-    @Column(name = "grade", nullable = false)
+    @Column(name = "grade", nullable = false, length = 5)
     private String grade;
 
     // Constructors
