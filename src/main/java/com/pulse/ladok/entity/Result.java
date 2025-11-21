@@ -15,7 +15,7 @@ public class Result {
     private String personalNo;
 
     @Column(name = "course_id", nullable = false, length = 50)
-    private int courseId;
+    private String courseId;
 
     @Column(name = "module_code", nullable = false, length = 50)
     private String moduleCode;
@@ -29,7 +29,7 @@ public class Result {
     // Constructors
     public Result() {
     }
-    public Result(String personalNo, int courseId, String moduleCode, LocalDate examDate, String grade) {
+    public Result(String personalNo, String courseId, String moduleCode, LocalDate examDate, String grade) {
         this.personalNo = personalNo;
         this.courseId = courseId;
         this.moduleCode = moduleCode;
@@ -54,12 +54,20 @@ public class Result {
         this.personalNo = personalNo;
     }
 
-    public int getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(int courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
+    }
+
+    public String getModuleCode() {
+        return moduleCode;
+    }
+
+    public void setModuleCode(String moduleCode) {
+        this.moduleCode = moduleCode;
     }
 
     public String getGrade() {
