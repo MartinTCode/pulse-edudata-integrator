@@ -434,6 +434,7 @@
             </build>
         </profile>
         <profile>
+        <!-- mvn -P db flyway:clean flyway:migrate -->
             <id>db</id>
             <build>
             <plugins>
