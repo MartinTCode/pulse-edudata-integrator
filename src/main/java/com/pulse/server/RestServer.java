@@ -26,6 +26,7 @@ public class RestServer {
 
     public static HttpServer startServer() {
         final ResourceConfig rc = new ResourceConfig().packages(
+            "com.pulse.api",
             "com.pulse.epok.api",
             "com.pulse.studentits.api",
             "com.pulse.ladok.api");
