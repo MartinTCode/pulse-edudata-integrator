@@ -44,7 +44,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane minHeight="447.0" minWidth="783.0" prefHeight="447.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane minHeight="447.0" minWidth="783.0" prefHeight="447.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pulse.frontend.InfoTableController">
    <top>
       <HBox prefHeight="100.0" prefWidth="783.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -206,7 +206,7 @@
       </VBox>
    </right>
    <bottom>
-      <TableView fx:id="infoTableView" prefHeight="259.0" prefWidth="774.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="infoTableView" editable="true" prefHeight="259.0" prefWidth="774.0" BorderPane.alignment="CENTER">
          <columns>
             <TableColumn fx:id="rutColumn" prefWidth="49.60000532865524" />
             <TableColumn fx:id="namnColumn" prefWidth="100.80002212524414" text="Namn" />
