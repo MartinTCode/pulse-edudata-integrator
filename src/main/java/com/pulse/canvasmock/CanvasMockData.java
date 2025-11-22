@@ -33,22 +33,22 @@ public class CanvasMockData {
 
                 // Student results for assignment 1
                 CanvasStudentResult s1a = new CanvasStudentResult();
-                s1a.setStudentID("annand-1");
+                s1a.setStudentId("annand-1");
                 s1a.setStudentName("Anna Andersson");
                 s1a.setCanvasGrade("G");
 
                 CanvasStudentResult s2a = new CanvasStudentResult();
-                s2a.setStudentID("bjober-1");
+                s2a.setStudentId("bjober-1");
                 s2a.setStudentName("Björn Berg");
                 s2a.setCanvasGrade("G");
 
                 CanvasStudentResult s3a = new CanvasStudentResult();
-                s3a.setStudentID("ceccar-1");
+                s3a.setStudentId("ceccar-1");
                 s3a.setStudentName("Cecilia Carlsson");
                 s3a.setCanvasGrade("U");
 
                 CanvasStudentResult s4a = new CanvasStudentResult();
-                s4a.setStudentID("davdom-1");
+                s4a.setStudentId("davdom-1");
                 s4a.setStudentName("David Domare");
                 s4a.setCanvasGrade("G");
 
@@ -69,22 +69,22 @@ public class CanvasMockData {
                 assignment2.setResults(new ArrayList<>());
 
                 CanvasStudentResult s1b = new CanvasStudentResult();
-                s1b.setStudentID("annand-1");
+                s1b.setStudentId("annand-1");
                 s1b.setStudentName("Anna Andersson");
                 s1b.setCanvasGrade("VG");
 
                 CanvasStudentResult s2b = new CanvasStudentResult();
-                s2b.setStudentID("bjober-1");
+                s2b.setStudentId("bjober-1");
                 s2b.setStudentName("Björn Berg");
                 s2b.setCanvasGrade("VG");
 
                 CanvasStudentResult s3b = new CanvasStudentResult();
-                s3b.setStudentID("ceccar-1");
+                s3b.setStudentId("ceccar-1");
                 s3b.setStudentName("Cecilia Carlsson");
                 s3b.setCanvasGrade("G");
 
                 CanvasStudentResult s4b = new CanvasStudentResult();
-                s4b.setStudentID("davdom-1");
+                s4b.setStudentId("davdom-1");
                 s4b.setStudentName("David Domare");
                 s4b.setCanvasGrade("G");
 
@@ -113,22 +113,22 @@ public class CanvasMockData {
                 assignment3.setResults(new ArrayList<>());
 
                 CanvasStudentResult s1c = new CanvasStudentResult();
-                s1c.setStudentID("annand-1");
+                s1c.setStudentId("annand-1");
                 s1c.setStudentName("Anna Andersson");
                 s1c.setCanvasGrade("G");
 
                 CanvasStudentResult s2c = new CanvasStudentResult();
-                s2c.setStudentID("bjober-1");
+                s2c.setStudentId("bjober-1");
                 s2c.setStudentName("Björn Berg");
                 s2c.setCanvasGrade("G");
 
                 CanvasStudentResult s3c = new CanvasStudentResult();
-                s3c.setStudentID("ceccar-1");
+                s3c.setStudentId("ceccar-1");
                 s3c.setStudentName("Cecilia Carlsson");
                 s3c.setCanvasGrade("G");
 
                 CanvasStudentResult s4c = new CanvasStudentResult();
-                s4c.setStudentID("davdom-1");
+                s4c.setStudentId("davdom-1");
                 s4c.setStudentName("David Domare");
                 s4c.setCanvasGrade("U");
 
@@ -149,22 +149,22 @@ public class CanvasMockData {
                 assignment4.setResults(new ArrayList<>());
 
                 CanvasStudentResult s1d = new CanvasStudentResult();
-                s1d.setStudentID("annand-1");
+                s1d.setStudentId("annand-1");
                 s1d.setStudentName("Anna Andersson");
                 s1d.setCanvasGrade("G");
 
                 CanvasStudentResult s2d = new CanvasStudentResult();
-                s2d.setStudentID("bjober-1");
+                s2d.setStudentId("bjober-1");
                 s2d.setStudentName("Björn Berg");
                 s2d.setCanvasGrade("G");
 
                 CanvasStudentResult s3d = new CanvasStudentResult();
-                s3d.setStudentID("ceccar-1");
+                s3d.setStudentId("ceccar-1");
                 s3d.setStudentName("Cecilia Carlsson");
                 s3d.setCanvasGrade("VG");
 
                 CanvasStudentResult s4d = new CanvasStudentResult();
-                s4d.setStudentID("davdom-1");
+                s4d.setStudentId("davdom-1");
                 s4d.setStudentName("David Domare");
                 s4d.setCanvasGrade("U");
 
@@ -194,22 +194,22 @@ public class CanvasMockData {
                 assignment5.setResults(new ArrayList<>());
 
                 CanvasStudentResult s1e = new CanvasStudentResult();
-                s1e.setStudentID("annand-1");
+                s1e.setStudentId("annand-1");
                 s1e.setStudentName("Anna Andersson");
                 s1e.setCanvasGrade("G");
 
                 CanvasStudentResult s2e = new CanvasStudentResult();
-                s2e.setStudentID("bjober-1");
+                s2e.setStudentId("bjober-1");
                 s2e.setStudentName("Björn Berg");
                 s2e.setCanvasGrade("G");
 
                 CanvasStudentResult s3e = new CanvasStudentResult();
-                s3e.setStudentID("ceccar-1");
+                s3e.setStudentId("ceccar-1");
                 s3e.setStudentName("Cecilia Carlsson");
                 s3e.setCanvasGrade("G");
 
                 CanvasStudentResult s4e = new CanvasStudentResult();
-                s4e.setStudentID("davdom-1");
+                s4e.setStudentId("davdom-1");
                 s4e.setStudentName("David Domare");
                 s4e.setCanvasGrade("G");
 
@@ -230,22 +230,22 @@ public class CanvasMockData {
                 assignment6.setResults(new ArrayList<>());
 
                 CanvasStudentResult s1f = new CanvasStudentResult();
-                s1f.setStudentID("annand-1");
+                s1f.setStudentId("annand-1");
                 s1f.setStudentName("Anna Andersson");
                 s1f.setCanvasGrade("VG");
 
                 CanvasStudentResult s2f = new CanvasStudentResult();
-                s2f.setStudentID("bjober-1");
+                s2f.setStudentId("bjober-1");
                 s2f.setStudentName("Björn Berg");
                 s2f.setCanvasGrade("VG");
 
                 CanvasStudentResult s3f = new CanvasStudentResult();
-                s3f.setStudentID("ceccar-1");
+                s3f.setStudentId("ceccar-1");
                 s3f.setStudentName("Cecilia Carlsson");
                 s3f.setCanvasGrade("VG");
 
                 CanvasStudentResult s4f = new CanvasStudentResult();
-                s4f.setStudentID("davdom-1");
+                s4f.setStudentId("davdom-1");
                 s4f.setStudentName("David Domare");
                 s4f.setCanvasGrade("VG");
 
